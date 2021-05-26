@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper || Simple</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h4>c o l o r - f l i p p e r</h4>
+        <ul class="nav-links">
+       </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>FIND YOUR FAVORITE COLOR <span class="color"></span></h2>
+        <button class="btn btn-hero" id="btn">click me</button>
+      </div>
+      <div class="color">
+      <h3> Select your favorite color: <input type="color" id="myColor"> </h3>
+
+        <h5><p>Click the "Try it" button to get the color of the color picker.</p></h5>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <p id="demo"></p>
+      </div>
+    </main>
+    
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myColor").value;
+          document.getElementById("demo").innerHTML = x;
+        }
+        </script>
+  </body>
+  <footer id="footer">
+    <h2> Antoni Nunez M &copy; 2021</h2>
+ 
+ </footer>
+  
+
+</html>
